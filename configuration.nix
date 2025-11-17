@@ -65,6 +65,8 @@
   # Enable Flatpak on system
   services.flatpak.enable = true;
   #xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ]; # May not need this on Gnome
+  # Note be sure to run `flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
+  # after updating with `sudo nixos-rebuild switch` so that the flathub repo is integrated into software center.
 
   # Setup Appimage support
   programs.appimage.enable = true;
