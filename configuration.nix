@@ -47,6 +47,9 @@
     };
   };
 
+  # Load the graphics drivers
+  services.xserver.videoDrivers = ["amdgpu"];
+
   # Enable kernel level Graphics options
   boot.kernelParams = [
     "video=DP-4:3840x1600@60"
