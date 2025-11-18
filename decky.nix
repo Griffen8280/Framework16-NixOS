@@ -13,7 +13,7 @@ let
       /* needed for volume mixer */
       pulseaudio
     ];
-    runScript = "/home/chris/homebrew/services/PluginLoader";
+    runScript = "/home/user/homebrew/services/PluginLoader";
   };
 in 
 {
@@ -22,7 +22,7 @@ in
     after = [ "network-online.target" ];
     wants = [ "network-online.target" ];
     environment = {
-      PLUGIN_PATH = "/home/chris/homebrew/plugins";
+      PLUGIN_PATH = "/home/user/homebrew/plugins";
       LOG_LEVEL = "INFO";
     };
     serviceConfig = {
@@ -30,7 +30,7 @@ in
       User = "root";
       Restart = "always";
       ExecStart = "${plugin_loader}/bin/PluginLoader";
-      WorkingDirectory = "/home/chris/homebrew/services";
+      WorkingDirectory = "/home/user/homebrew/services";
       KillSignal = "SIGKILL";
     };
   };
