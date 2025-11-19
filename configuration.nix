@@ -211,6 +211,7 @@
     xdg-utils
     jq
     zenity
+    efibootmgr
     #Internet/Social
     remmina
     discord 
