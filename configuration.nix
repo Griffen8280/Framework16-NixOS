@@ -212,6 +212,7 @@
     jq
     zenity
     efibootmgr
+    zulu
     #Internet/Social
     remmina
     discord 
